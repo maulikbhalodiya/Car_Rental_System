@@ -1,0 +1,141 @@
+@import url('admin-style.css');
+
+/* ------------------- Manage Registered Users Styles ------------------- */
+.manage-users{
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manage-users h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+
+.button-group {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; Aligns search and delete on opposite ends */
+    align-items: center; /* Vertically align the items */
+    gap: 10px; /* Adds space between the buttons */
+}
+
+
+/* Search and Filter Styles */
+/* .search-filter{
+    display: flex;
+} */
+
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin-top: 0.1rem;
+}
+
+.manage-users table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.manage-users th,
+.manage-users td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.manage-users th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.manage-users tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Action Buttons */
+/* .edit-btn,
+.delete-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #2ecc71;
+}
+
+.edit-btn:hover {
+    background-color: #27ae60;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+} */
+
+/* Icons in Buttons */
+.manage-users .edit-btn i,
+.manage-users .delete-btn i {
+    margin-right: 5px;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db; /* Your main color */
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #2980b9;
+}
+
+.pagination .current-page {
+    background-color: #1f242d; /* Adjust to match your design */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    .content {
+        padding: 10px;
+    }
+    .manage-users table,
+    .manage-users th,
+    .manage-users td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

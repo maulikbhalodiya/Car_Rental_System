@@ -1,0 +1,146 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and global container */
+body {
+    background-color: #f4f4f9;
+    font-size: 16px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Profile Picture */
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1abc9c;
+}
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Align buttons to the edges */
+    margin-top: 15px;
+}
+
+ form button,
+.button-container .btn {  
+    flex: 1; /* Allow buttons to take equal space */
+    margin-right: 10px;
+    border-radius: 5px; 
+} 
+
+.button-container .btn {
+    text-align: center; /* Center text in the Cancel button */
+    display: flex; /* Make sure the anchor looks like a button */
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Remove margin from the last button */
+.button-container button:last-child,
+.button-container .btn:last-child {
+    margin-right: 0;
+}
+
+
+/* Success and Error Messages */
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #3c763d;
+}
+
+.message.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #a94442;
+}
+
+
+
+/* Settings Links (Delete Account, Change Password) */
+.btn-settings {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-settings:hover {
+    background-color: #c0392b;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    form input, form button {
+        width: 100%;
+    }
+
+    .profile-picture img {
+        width: 80px;
+        height: 80px;
+    }
+}

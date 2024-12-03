@@ -1,0 +1,68 @@
+table {
+   width: 100%;
+   border-collapse: collapse;
+}
+table, th, td {
+   border: 1px solid #aaa;
+}
+th, td {
+   padding: 10px;
+   text-align: left;
+}
+.approve-btn, .reject-btn {
+   padding: 5px 10px;
+   margin-right: 5px;
+   border: none;
+   cursor: pointer;
+   color: #fff;
+}
+.approve-btn {
+   background-color: #28a745;
+}
+.reject-btn {
+   background-color: #dc3545;
+}
+img {
+   max-width: 100px;
+   height: auto;
+   margin: 5px;
+   cursor: pointer;
+}
+.pagination {
+   margin-top: 20px;
+}
+.pagination a {
+   padding: 10px;
+   margin: 0 5px;
+   background-color: #007bff;
+   color: white;
+   text-decoration: none;
+   border-radius: 5px;
+}
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   padding-top: 60px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+}
+.close {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: white;
+   font-size: 40px;
+   font-weight: bold;
+   cursor: pointer;
+}

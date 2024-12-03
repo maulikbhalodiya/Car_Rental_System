@@ -1,0 +1,7 @@
+{
+   "require": {
+       "phpmailer/phpmailer": "^6.9",
+       "razorpay/razorpay": "^2.9",
+       "setasign/fpdf": "^1.8"
+   }
+}

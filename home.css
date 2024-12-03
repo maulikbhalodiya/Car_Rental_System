@@ -1,0 +1,262 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   background-color: #FFFAF6;
+   color: #333;
+}
+
+header {
+   background-color: #242424;
+   color: #fff;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 20px;
+   background-color: #1f1f1f;
+}
+
+.contact-info {
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+}
+
+.contact-info i {
+   margin-right: 5px;
+}
+
+.auth-buttons {
+   font-size: 14px;
+}
+
+.auth-buttons a {
+   color: #fff;
+   text-decoration: none;
+   padding: 5px 15px;
+   background-color: #FF8500;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.auth-buttons a:hover {
+   background-color: #FF5722;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px; 
+}
+
+.navbar .logo {
+   font-size: 24px;
+   font-weight: 600;
+   color: #FF8500;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.navbar ul {
+   display: flex;
+   list-style: none;
+}
+
+.navbar ul li {
+   margin: 0 15px;
+   position: relative;
+}
+
+.navbar ul li a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: 500;
+   padding: 5px 0;
+   transition: color 0.3s ease, transform 0.3s ease;
+}
+
+ /* .navbar ul li a:hover,  */
+.navbar ul li a.active {
+    color: aqua;
+    text-decoration: underline;
+    /* transform: scale(1.1); */
+} 
+.navbar ul li a.active:hover {
+   text-decoration: none; /* Disable underline on hover for the active link */
+   transform: none; /* Disable scaling on hover for the active link */
+}
+
+.navbar ul li a:hover{
+   color: aqua;
+}
+ .navbar ul li:after {
+   content: '';
+   position: absolute;
+   left: 50%;
+   bottom: -1px;
+   width: 0;
+   height: 2px;
+   background: aqua;
+   
+   transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar ul li:hover:after {
+   width: 100%;
+   left: 0;
+} 
+/* Existing styles... */
+
+.auth-buttons {
+   font-size: 14px;
+   display: flex;
+   align-items: center;
+}
+
+.profile {
+   position: relative;
+   margin-left: 20px;
+   cursor: pointer;
+   color: #fff;
+}
+
+.profile-icon {
+   font-size: 20px; /* Adjust size as needed */
+   margin-right: 5px;
+}
+
+.profile-dropdown {
+   display: none;
+   position: absolute;
+   right: 0;
+   background: #1f1f1f;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   min-width: 150px;
+   z-index: 1000;
+}
+
+.profile-dropdown a {
+   display: block;
+   padding: 10px;
+   color: #fff;
+   text-decoration: none;
+   transition: background-color 0.3s ease;
+}
+
+.profile-dropdown a:hover {
+   background-color: #FF8500;
+}
+
+.profile:hover .profile-dropdown {
+   display: block;
+}
+.menu-toggle {
+   display: none; /* Hidden by default */
+}
+
+
+/* Existing styles... */
+
+
+@media (max-width: 768px) {
+   .navbar ul {
+       flex-direction: column;
+       position: absolute;
+       background: #242424;
+       top: 60px;
+       left: 0;
+       width: 100%;
+       display: none;
+       padding: 10px 0;
+   }
+   
+   .navbar ul li {
+       margin: 10px 0;
+   }
+
+   .navbar.active ul {
+       display: flex;
+   }
+
+   .menu-toggle {
+       display: block;
+       cursor: pointer;
+       color: #fff;
+       font-size: 24px;
+   }
+}
+
+.hero {
+   position: relative;
+}
+.hero img {
+   width: -webkit-fill-available;
+   height: auto;
+   max-height: 600px;
+}
+.hero .hero-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: #fff;
+}
+.hero .hero-text h1 {
+   font-size: 48px;
+   margin-bottom: 10px;
+}
+.hero .hero-text p {
+   font-size: 18px;
+   margin-bottom: 20px;
+}
+.hero .hero-text .btn {
+   background-color: #FF8500;
+   padding: 10px 20px;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 5px;
+}
+.hero .hero-text .btn:hover {
+   background-color: #FF5722;
+}
+
+
+footer {
+   background-color: #242424;
+   color: #fff;
+   padding: 40px 20px;
+}
+.footer-content {
+   display: flex;
+   justify-content: space-around;
+}
+.footer-section {
+   width: 30%;
+}
+.footer-section h4 {
+   margin-bottom: 15px;
+}
+.footer-section a {
+   color: #fff;
+   text-decoration: none;
+   display: block;
+   margin-bottom: 5px;
+}
+.footer-section a:hover {
+   color: aqua;
+}
+
+/*Contact us*/
+form.mt-4{
+   margin-bottom: 1.5rem;
+}

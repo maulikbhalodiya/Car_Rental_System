@@ -1,0 +1,182 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.profile-card {
+    background-color: #fff;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-header {
+    background-color: #2f80ed;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #56ccf2;
+}
+
+.profile-header img {
+    width: 180px; /* Adjust the width of the image */
+    height: 180px; /* Adjust the height of the image */
+    object-fit: cover; /* Ensures the image covers the circle while maintaining aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid #2f80ed; /* Optional: Adds a border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    margin-bottom: 10px; /* Adds some spacing below the image */
+    
+}
+
+.profile-header h2 {
+    margin: 10px 0;
+}
+
+.btn-edit {
+    background-color: #fff;
+    color: #2f80ed;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #56ccf2;
+}
+
+.profile-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-info, .profile-history, .profile-favorites, .profile-settings {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-info h3, .profile-history h3, .profile-favorites h3, .profile-settings h3 {
+    border-bottom: 2px solid #2f80ed;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.profile-hired-chauffeurs {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.profile-hired-chauffeurs h3 {
+    margin: 0 0 15px;
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+.hired-chauffeurs-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hired-chauffeurs-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hired-chauffeurs-list li img {
+    width: 60px; /* Adjust width as needed */
+    height: 60px; /* Adjust height as needed */
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.hired-chauffeurs-list li p {
+    margin: 0;
+    flex: 1; /* Allow text to take the remaining space */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}
+
+.rental-list li, .favorites-list li {
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-view-details, .btn-settings {
+    display: inline-block;
+    background-color: #2f80ed;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view-details:hover, .btn-settings:hover {
+    background-color: #56ccf2;
+}
+
+.profile-settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 20px ;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}

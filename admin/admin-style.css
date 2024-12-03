@@ -1,0 +1,571 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f0f4f8;
+}
+/*Side navigation design*/
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #34495e;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.sidebar li a:hover, .sidebar li a.active {
+    background-color: #34495e;
+    padding-left: 15px;
+}
+
+.sidebar li i {
+    color: aqua;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+/*for content in body*/
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar h2 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #3498db;
+}
+
+/* .admin-icon {
+    background-color: #3498db;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 0.7rem;
+} */
+
+.user-info span {
+    color: #2c3e50;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.logout-btn {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.logout-btn:hover {
+    color: #c0392b;
+}
+/*card design cade*/
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card h3 {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+}
+
+.dashboard-card p {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.dashboard-card .details {
+    margin-top: 15px;
+}
+
+.dashboard-card .details a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-card .details a:hover {
+    text-decoration: underline;
+}
+
+.card-1 { background-color: #3498db; } /* Bright Blue */
+.card-2 { background-color: #e74c3c; } /* Bright Red */
+.card-3 { background-color: #2ecc71; } /* Emerald Green */
+.card-4 { background-color: #f39c12; } /* Orange */
+.card-5 { background-color: #9b59b6; } /* Purple */
+.card-6 { background-color: #1abc9c; } /* Turquoise */
+.card-7 { background-color: #34495e; } /* Dark Blue Gray */
+
+
+
+/* ------------------Manage Brands page Styles --------------------------*/
+.manage-brands ,.manage-contact-queries {
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manage-brands h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+.manage-brands form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.manage-brands input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.manage-brands button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.manage-brands button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin-top: 0.1rem;
+}
+
+.manage-brands table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.manage-brands th,
+.manage-brands td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.manage-brands th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.manage-brands tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Action Buttons */
+.edit-btn,
+.delete-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #2ecc71;
+}
+
+.edit-btn:hover {
+    background-color: #27ae60;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+
+/* ---------------------Manage Vehicles Styles-------------- */
+.manage-vehicles {
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manage-vehicles h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Add Vehicle Form Styles */
+.add-vehicle-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-vehicle-form input,
+.add-vehicle-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-vehicle-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-vehicle-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Search and Filter Styles */
+/* .search-filter {
+    margin-bottom: 20px;
+} */
+
+.search-filter form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-filter input[type="text"] {
+    flex-grow: 1;
+}
+
+.search-filter button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-filter button:hover {
+    background-color: #27ae60;
+}
+
+/* Table Styles (shared with Manage Brands) */
+
+.manage-vehicles table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.manage-vehicles th,
+.manage-vehicles td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.manage-vehicles th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.manage-vehicles tr:hover {
+    background-color: #f5f5f5;
+}
+
+/*cansle button in edit*/
+/* Ensure this styling matches your existing button styles */
+.add-vehicle-form button,
+.add-vehicle-form .cancel-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.add-vehicle-form button {
+    background-color: #3498db; /* Main color */
+    color: #fff;
+}
+
+.add-vehicle-form .cancel-btn {
+    background-color: #f44336; /* Red color for cancel */
+    color: #fff;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.add-vehicle-form .cancel-btn:hover{
+    background-color: #c0392b; /* Red color for cancel */
+}
+
+/* car liost pagigantipn */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db; /* Your main color */
+    transition: background-color 0.3 ease;
+}
+.pagination a:hover{
+    background-color: #2980b9;
+}
+
+.pagination .current-page {
+    background-color: #1f242d; /* Adjust to match your design */
+}
+
+
+/*----------Contact Queriry page design-------------*/
+/* 
+.manage-contact-queries h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    padding: 10px 15px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table Styles *
+.manage-contact-queries .table-container {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.manage-contact-queries .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-container select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.table-container .edit-btn, .reply-btn{
+    background-color: #28a745;
+}
+.table-container button {
+    padding: 5px 10px;
+    
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+.btn-delete:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.table-container .edit-btn:hover, .reply-btn:hover {
+    background-color: #218838;
+} */
+
+
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    .content {
+        padding: 10px;
+    }
+    .dashboard-cards {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    /* brands*/
+    .manage-brands form {
+        flex-direction: column;
+    }
+    
+    .manage-brands input[type="text"],
+    .manage-brands button[type="submit"] {
+        width: 100%;
+    }
+    
+    .manage-brands th,
+    .manage-brands td {
+        padding: 8px;
+    }
+
+    /*vehicles*/
+    .add-vehicle-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-filter form {
+        flex-direction: column;
+    }
+    
+    .manage-vehicles th,
+    .manage-vehicles td {
+        padding: 8px;
+    }
+    
+    .manage-vehicles table {
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,88 @@
+.button-group {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center vertically */
+}
+
+.button-group .btn, .button-group .delete-btn {
+    margin-right: 10px; /* Add some space between buttons */
+}
+
+.manage-contact-queries h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    padding: 10px 15px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table Styles */
+.manage-contact-queries .table-container {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.manage-contact-queries .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-container select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.table-container .edit-btn, .reply-btn{
+    background-color: #28a745;
+}
+.table-container button {
+    padding: 5px 10px;
+    
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+.btn-delete:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.table-container .edit-btn:hover, .reply-btn:hover {
+    background-color: #218838;
+}

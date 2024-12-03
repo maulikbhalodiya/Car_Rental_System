@@ -1,0 +1,232 @@
+/* Main Page Design */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Align search box and listings side by side */
+}
+
+.header {
+    background-image: url('images/Car-listing1.png'); /* Update with the correct path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Search Section */
+.search-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 25%; /* Occupies 25% of the width */
+}
+
+.search-form {
+    margin: 0;
+}
+
+.search-form select,
+.search-form input,
+.search-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.search-form button {
+    background-color: #ff7700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #e86c00; /* Darker shade */
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+/* Car Listings */
+.car-listings {
+    width: 70%; /* Car listings take 70% of the width */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.car-item {
+    height: fit-content;
+    width: 48%; /* Cars displayed in 2 columns */
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.car-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s; /* Smooth transition for image */
+}
+
+.car-item:hover .car-image img {
+    transform: scale(1.1); /* Zoom in effect on image hover */
+}
+
+.car-details {
+    padding: 15px;
+}
+
+.car-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.car-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.car-info span {
+    font-size: 14px;
+    color: #666;
+}
+
+.view-details {
+    background-color: #ff7700;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-details:hover {
+    background-color: #e86c00; /* Darker shade */
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+/* Recently Listed Section */
+.recently-listed {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.recent-car {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.recent-car:hover {
+    transform: scale(1.02); /* Slightly enlarge */
+}
+
+.recent-car img {
+    width: 70px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.recent-car-info {
+    flex-grow: 1;
+}
+
+.recent-car-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.recent-car-price {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    background-color: #ff7700;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #e86c00; /* Darker shade */
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+.pagination span {
+    align-self: center; /* Center the text */
+    color: #666;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff7700;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack search and listings on smaller screens */
+    }
+
+    .search-section {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .car-listings {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .car-item {
+        width: 100%; /* Full width for car item on mobile */
+    }
+}

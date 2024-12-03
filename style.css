@@ -1,0 +1,174 @@
+body {
+   background: linear-gradient(to right, #5FBFF1, #00FFFF, #54A8D4, #75c0e8);
+   font-family: 'Poppins', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0;
+}
+
+/* For the form container */
+.container {
+   background-color: white;
+   width: 30rem;
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+   text-align: center;
+}
+
+/* Headings */
+h1 {
+   margin-bottom: 20px;
+}
+
+/* Input group for alignment */
+.input-group {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 1.5rem;
+}
+
+label {
+   width: 30%;
+   text-align: left;
+   font-weight: bold;
+}
+
+.input-wrapper {
+   width: 70%;
+   position: relative;
+}
+
+.input-wrapper i {
+   position: absolute;
+   left: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #ccc;
+}
+
+/* Input fields */
+.input-wrapper input {
+   width: 100%;
+   padding: 10px 10px 10px 35px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
+   transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-wrapper input:focus {
+   border-color: #008CBA;
+   box-shadow: 0 0 5px rgba(0, 140, 186, 0.5);
+   outline: none;
+}
+
+/* Submit button */
+button[type="submit"] {
+   background-color: #008CBA;
+   color: white;
+   padding: 0.6rem 1.2rem;
+   border: none;
+   border-radius: 0.3rem;
+   cursor: pointer;
+   margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+   background-color: #0069D9;
+}
+
+/* Verify Button (for OTP) */
+button.verify-btn {
+   background-color: #28a745;
+   color: white;
+   padding: 0.5rem 1rem;
+   border: none;
+   border-radius: 0.3rem;
+   cursor: pointer;
+   margin-left: 10px;
+}
+
+button.verify-btn:hover {
+   background-color: #218838;
+}
+
+a {
+   display: block;
+   margin-top: 1rem;
+   color: #008CBA;
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+/* For Error */
+.error-message {
+   color: red;
+   font-size: 0.85rem;
+   margin-top: 5px;
+   display: block;
+}
+
+/* Input error border */
+.input-error {
+   border-color: red;
+}
+
+/* OTP section */
+.otp-section {
+   display: none; /* Hidden by default, shows up when OTP is sent */
+   margin-bottom: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .container {
+       width: 70%;
+       padding: 1.5rem;
+   }
+  
+   label {
+       width: 100%;
+       text-align: left;
+       margin-bottom: 5px;
+   }
+
+   .input-wrapper {
+       width: 100%;
+   }
+   
+   button[type="submit"] {
+       width: 30%;
+       padding: 0.8rem;
+   }
+}
+
+@media (max-width: 480px) {
+   .container {
+       width: 70%;
+       padding: 1rem;
+   }
+   h1 {
+       font-size: 1.5rem;
+   }
+
+   label {
+       font-size: 0.9rem;
+   }
+
+   .input-wrapper input {
+       padding: 10px 10px 10px 30px;
+       font-size: 0.9rem;
+   }
+
+   button[type="submit"] {
+       width: 30%;
+       font-size: 1rem;
+   }
+}
