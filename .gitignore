@@ -1,0 +1,55 @@
+# Ignore Composer's vendor directory (includes PHPMailer and Razorpay SDK)
+/vendor/
+
+# Ignore node_modules if you are using Node.js for front-end tools (e.g., Webpack, npm)
+node_modules/
+
+# Ignore temporary files for code editors like VS Code or JetBrains
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+.DS_Store    # macOS
+Thumbs.db    # Windows
+
+# Ignore PHP-specific files
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Ignore compiled PHP files
+*.phar
+*.pdb
+*.dep
+
+# Ignore front-end build directories (e.g., Webpack build outputs)
+dist/
+build/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files created by editors (e.g., Sublime, Atom)
+*.swp
+*.swo
+
+# Ignore environment files (e.g., .env for database passwords or API keys)
+.env
+
+# Ignore backup files (e.g., vim, emacs backups)
+*~
+
+# Ignore custom upload directories (e.g., for file uploads)
+uploads/
+
+# Ignore PHPMailer specific temp files
+.phpmailer/
+
+# Ignore any sensitive or API-related files that could contain your Razorpay keys
+config/razorpay_config.php  # or any custom file where you store API keys
+
+# Ignore SQL dump files (if generated for database backup)
+*.sql
+*.sqlite
+*.db
