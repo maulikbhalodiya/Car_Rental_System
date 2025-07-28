@@ -7,8 +7,8 @@ require 'vendor/autoload.php';
 use Razorpay\Api\Api;
 
 // Set Razorpay test mode keys
-$razorpay_key_id = 'rzp_test_2xuCr5Gu8ys5Pr';
-$razorpay_key_secret = 'aapkSTPDvH8y6ncT2GxseAs5';
+$razorpay_key_id = 'razorpaypublickey';
+$razorpay_key_secret = 'razorpaysecratekey';
 
 // Initialize Razorpay API
 $api = new Api($razorpay_key_id, $razorpay_key_secret);
