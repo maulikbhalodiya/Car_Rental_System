@@ -19,8 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
         $mail->isSMTP();
          $mail->Host = 'smtp.gmail.com';
          $mail->SMTPAuth = true;
-         $mail->Username = 'projectcp44@gmail.com';  // Your Gmail address
-         $mail->Password = 'zmmg vcva urpi iwsy';    // Your generated app password
+         $mail->Username = 'yourmail@gmail.com';  // Your Gmail address
+         $mail->Password = 'passport-key';    // Your generated app password
          $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
          $mail->Port = 587; //The port for TLS on Gmail's SMTP server.
 
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email'])) {
         $mail->Debugoutput = 'html';  // Display debug as HTML
 
         // Recipients
-        $mail->setFrom('projectcp44@gmail.com', 'From Maulik and team');
+        $mail->setFrom('yourmail@gmail.com', 'From Maulik and team');
         $mail->addAddress($email);
 
         // Content
