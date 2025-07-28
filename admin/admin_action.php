@@ -21,13 +21,13 @@ function sendStatusMail($email, $name, $status) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
         $mail->SMTPAuth = true;
-        $mail->Username = 'projectcp44@gmail.com'; // SMTP username
-        $mail->Password = 'zmmg vcva urpi iwsy'; // SMTP password
+        $mail->Username = 'yourmail@gmail.com'; // SMTP username
+        $mail->Password = 'your password key'; // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587; // TCP port to connect to
 
         //Recipients
-        $mail->setFrom('projectcp44@gmail.com', 'Car Rental Team');
+        $mail->setFrom('yourmail@gmail.com', 'Car Rental Team');
         $mail->addAddress($email, $name); // Add a recipient
 
         // Content
