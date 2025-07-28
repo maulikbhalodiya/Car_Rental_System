@@ -5,8 +5,8 @@ use Razorpay\Api\Api;
 use setasign\Fpdi\Fpdi;
 
 // Set Razorpay test mode keys
-$razorpay_key_id = 'rzp_test_2xuCr5Gu8ys5Pr';
-$razorpay_key_secret = 'aapkSTPDvH8y6ncT2GxseAs5';
+$razorpay_key_id = 'razorpaypublickey';
+$razorpay_key_secret = 'razorpaysecratekey';
 $api = new Api($razorpay_key_id, $razorpay_key_secret);
 
 // Get payment ID and order ID from the GET data
