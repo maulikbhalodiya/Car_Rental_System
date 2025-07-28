@@ -38,13 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submitEmail'])) {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'projectcp44@gmail.com';  // Your Gmail address
-                $mail->Password = 'zmmg vcva urpi iwsy';    // Your generated app password
+                $mail->Username = 'yourmail@gmail.com';  // Your Gmail address
+                $mail->Password = 'your password key';    // Your generated app password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port = 587;
 
                 // Recipients
-                $mail->setFrom('projectcp44@gmail.com', 'Car Rental Support');
+                $mail->setFrom('yourmail@gmail.com', 'Car Rental Support');
                 $mail->addAddress($email);
 
                 // Content
