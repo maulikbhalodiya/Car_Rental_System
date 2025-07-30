@@ -91,13 +91,13 @@ if (isset($_POST['reply_query'])) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
         $mail->SMTPAuth = true;
-        $mail->Username = 'carrentalservice147@gmail.com';  // Your Gmail address
-        $mail->Password = 'ziwq ljxt zgiy vfhs';    // Your generated app password
+        $mail->Username = 'yourgmail@gmail.com';  // Your Gmail address
+        $mail->Password = 'your passpword key';    // Your generated app password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587; 
 
         // Recipients
-        $mail->setFrom('carrentalservice147@gmail.com', 'Car Rental Service');
+        $mail->setFrom('yourgmail@gmail.com', 'Car Rental Service');
         $mail->addAddress($recipient_email); 
 
         // Content
