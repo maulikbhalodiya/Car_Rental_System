@@ -138,13 +138,13 @@ if (!in_array($status, $allowed_status)) {
                         $mail->isSMTP();
                         $mail->Host       = 'smtp.gmail.com';
                         $mail->SMTPAuth   = true;
-                        $mail->Username   = 'carrentalservice147@gmail.com'; // Your Gmail address
-                        $mail->Password   = 'ziwq ljxt zgiy vfhs'; // Your Gmail App Password
+                        $mail->Username   = 'yourgmail@gmail.com'; // Your Gmail address
+                        $mail->Password   = 'your passpword key'; // Your Gmail App Password
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use TLS
                         $mail->Port       = 587; // TCP port to connect to
 
                         // Recipients
-                        $mail->setFrom('carrentalservice147@gmail.com', 'Car Rental Service');
+                        $mail->setFrom('yourgmail@gmail.com', 'Car Rental Service');
                         $mail->addAddress($customer_email, $customer_name); // Add a recipient
 
                         // Content
